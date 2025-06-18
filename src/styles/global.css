@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../../node_modules/flowbite";
+
+
+@font-face {
+  font-family: 'Agrandir';
+  src: url('../fonts/agrandir.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 100 700;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/montserrat.woff2") format("woff2");
+    font-style:normal;
+    font-weight: 100 700;
+    font-display: swap;
+}
+
+@theme {
+    /* Fuentes */
+
+    --font-agrandir: 'Agrandir', sans-serif;
+    --font-montserrat: 'Montserrat', sans-serif;
+}

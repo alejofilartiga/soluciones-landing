@@ -1,22 +1,60 @@
+---
+import "./src/styles/global.css";
+import Header from "./Header.astro"
+import Footer from "./Footer.astro";
+---
+
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<link rel="icon" type="png" href="../favicon.png" />
+		<title>Soluciones AFV | Home</title>
 	</head>
 	<body>
-		<slot />
+		<Header />
+			<slot />
+		<Footer />
 	</body>
+	<script is:inline src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
 </html>
 
 <style>
-	html,
+		/* *{
+	border: 1px solid red;   
+
+	} */
+
+	*{
+		user-select: none;
+	}
+
+
+
+    html{
+      scroll-behavior: smooth;
+    }
+
 	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
+	margin: 0;
+	padding: 0;
+	font-optical-sizing: auto;
+	-webkit-tap-highlight-color: transparent;
+	overflow-x: hidden;
+	}
+
+	a {
+	text-decoration: none;
+	color: white;
+	}
+
+	a:visited {
+	color: white;
+	}
+
+	li {
+	list-style: none;
 	}
 </style>
