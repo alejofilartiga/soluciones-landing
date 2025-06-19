@@ -21,6 +21,12 @@
 }
 
 @theme {
+    /* Colores */
+
+    --color-primary: #ff6e0f;
+    --color-secondary: #868e96;
+
+
     /* Fuentes */
 
     --font-agrandir: 'Agrandir', sans-serif;
