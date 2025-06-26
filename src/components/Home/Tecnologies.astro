@@ -1,12 +1,18 @@
-<section class="flex justify-center items-center w-full bg-primary h-fit">
-    <div class="flex justify-center items-center gap-4 w-full">
-        <h2 class="font-agrandir text-3xs text-center text-amber-50">Tecnologias Utilizadas</h2>
+---
+import react from "./img/tecnologies/react.svg";
+import tailwind from "./img/tecnologies/tailwind.svg";
+import javascript from "./img/tecnologies/javascript.svg";
+import astro from "./img/tecnologies/astro.png";
+---
+
+<section class="flex justify-center items-center w-full bg-primary h-fit p-4 ">
+    <div class="flex justify-center items-center gap-4 w-full md:justify-around">
+        <h2 class="font-agrandir text-3xs text-center text-amber-50 md:text-4xl ">Tecnologias Utilizadas</h2>
         <div class="flex flex-wrap justify-center items-center gap-3 p-3">
-            <img src="https://placehold.co/40x40" alt="">
-            <img src="https://placehold.co/40x40" alt="">
-            <img src="https://placehold.co/40x40" alt="">
-            <img src="https://placehold.co/40x40" alt="">
-            <img src="https://placehold.co/40x40" alt="">
+            <img src={react.src} class="md:w-10 w-7" alt="React Logo">
+            <img src={tailwind.src} class="md:w-10 w-7" alt="Tailwind Logo">
+            <img src={javascript.src} class="md:w-10 w-7" alt="JavaScript Logo">
+            <img src={astro.src} class="md:w-8 w-5" alt="Astro Logo">
         </div>
     </div>
 </section>

@@ -1,29 +1,39 @@
+---
+import campito from "./img/proyects/campito.jpeg"
+import patagonia from "./img/proyects/patagonia.jpeg"
+import bing from "./img/proyects/bing.jpeg"
+import tau from "./img/proyects/tau.png"
+import bgproyects from "./img/proyects/bgproyects.jpg"
+---
+
 <section id="proyects" class="w-full h-fit flex flex-col items-center justify-center bg-slate-900 text-amber-50 font-agrandir">
-    <div class="w-full flex justify-center items-center p-4 bg-amber-950 h-50">
-        <h2 class="text-2xl">Trabajos Realizados</h2>
+    <div class="w-full flex justify-center items-center bg-amber-950 md:h-70 h-30" style={`background-image: url('${bgproyects.src}'); background-size: cover; background-position: center; background-repeat: no-repeat;`}>
+        <div class="backdrop-blur-sm w-full h-full flex items-center justify-center">
+            <h2 class="text-2xl md:text-5xl text-gray-900 ">Trabajos Realizados</h2>
+        </div>
     </div>
     <div class="flex flex-wrap justify-center items-center gap-4 p-4 w-full">
-        <div class="flex flex-col items-center justify-center bg-gray-600 p-4 rounded-lg gap-4 w-60">
+        <div class="flex flex-col items-center justify-center bg-gray-600 p-4 rounded-lg gap-4 w-100">
             <h2 class="text-amber-100 text-xl">Campito Shop</h2>
-            <img class="overflow-hidden w-full rounded-lg" src="https://www.placehold.co/100x100" alt="Tienda Oficial del Deportivo Campito">
+            <img class="overflow-scroll w-full rounded-lg" src={campito.src} alt="Tienda Oficial del Deportivo Campito">
             <a class="bg-primary px-10 rounded-lg w-full text-center hover:bg-amber-900" href="https://campitoshop.vercel.app" target="_blank">Visitar</a>
         </div>
 
-        <div class="flex flex-col items-center justify-center bg-gray-600 p-4 rounded-lg gap-4 w-60">
+        <div class="flex flex-col items-center justify-center bg-gray-600 p-4 rounded-lg gap-4 w-100">
             <h2 class="text-amber-100 text-xl">Cerveza Patagonia</h2>
-            <img class="overflow-hidden w-full rounded-lg" src="https://www.placehold.co/100x100" alt="Pagina de Cerveza Patagonia">
+            <img class="overflow-hidden w-full rounded-lg" src={patagonia.src} alt="Pagina de Cerveza Patagonia">
             <a class="bg-primary px-10 rounded-lg w-full text-center hover:bg-amber-900" href="https://patagoniacerveza.vercel.app/" target="_blank">Visitar</a>
         </div>
 
-        <div class="flex flex-col items-center justify-center bg-gray-600 p-4 rounded-lg gap-4 w-60">
+        <div class="flex flex-col items-center justify-center bg-gray-600 p-4 rounded-lg gap-4 w-100">
             <h2 class="text-amber-100 text-xl">Bing - Alquiler de Autos</h2>
-            <img class="overflow-hidden w-full rounded-lg" src="https://www.placehold.co/100x100" alt="Pagina de Bing Rent a Car">
+            <img class="overflow-hidden w-full rounded-lg" src={bing.src}  alt="Pagina de Bing Rent a Car">
             <a class="bg-primary px-10 rounded-lg w-full text-center hover:bg-amber-900" href="https://bing-rent.vercel.app/" target="_blank">Visitar</a>
         </div>
 
-        <div class="flex flex-col items-center justify-center bg-gray-600 p-4 rounded-lg gap-4 w-60">
+        <div class="flex flex-col items-center justify-center bg-gray-600 p-4 rounded-lg gap-4 w-100">
             <h2 class="text-amber-100 text-xl">Tau Aderezos</h2>
-            <img class="overflow-hidden w-full rounded-lg" src="https://www.placehold.co/100x100" alt="Pagina de Tau Aderezos">
+            <img class="overflow-hidden w-full rounded-lg" src={tau.src}  alt="Pagina de Tau Aderezos">
             <a class="bg-primary px-10 rounded-lg w-full text-center hover:bg-amber-900" href="https://landing-with-react.vercel.app/" target="_blank">Visitar</a>
         </div>
     </div>

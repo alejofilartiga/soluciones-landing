@@ -1,3 +1,9 @@
+---
+import landing from "./img/services/landing.png"
+import multiruta from "./img/services/routes.svg"
+import domain from "./img/services/domain.svg"
+---
+
 <section id="about" class="w-full sm:pt-20 flex flex-col items-center justify-center gap-10 p-4 bg-secondary">
     <h2 class="font-agrandir text-3xl sm:text-6xl text-amber-50">Servicios</h2>
     <p class="text-center font-montserrat bg-amber-100 p-2 rounded-lg text-black text-xl text-balance sm:text-2xl md:w-1/2">Ofrecemos soluciones claras y efectivas para que tu comercio tenga presencia online de forma rápida, moderna y sin complicaciones.
@@ -6,7 +12,7 @@
     <div class="flex flex-wrap  flex-col justify-center items-center sm:flex-row gap-4">
         <div class="flex flex-wrap items-center justify-center gap-4 bg-gray-900 border-white p-2 border-1 rounded-lg">
             <div class="flex-shrink-0 border-white border-4 rounded-lg bg-gray-900">
-                <img class="overflow-hidden" src="https://placehold.co/200x150" alt="...">
+                <img class="overflow-hidden w-30" src={landing.src} alt="Landing Page Illustration">
             </div>
             <div class="flex flex-col items-center justify-center text-amber-50">
                 <h2 class="font-agrandir text-2xl">Landing Basica</h2>
@@ -22,7 +28,7 @@
 
         <div class="flex flex-wrap items-center justify-center gap-4 bg-gray-900 border-white p-2 border-1 rounded-lg">
             <div class="flex-shrink-0 border-white border-4 rounded-lg bg-gray-900">
-                <img class="overflow-hidden" src="https://placehold.co/200x150" alt="...">
+                <img class="overflow-hidden w-40" src={multiruta.src} alt="Web Multiroute Illustration">
             </div>
             <div class="flex flex-col items-center justify-center text-amber-50">
                 <h2 class="font-agrandir text-2xl">Web Multiruta</h2>
@@ -38,7 +44,7 @@
 
         <div class="flex flex-wrap items-center justify-center gap-4 bg-gray-900 border-white p-2 border-1 rounded-lg">
             <div class="flex-shrink-0 border-white border-4 rounded-lg bg-gray-900">
-                <img class="overflow-hidden" src="https://placehold.co/200x150" alt="...">
+                <img class="overflow-hidden w-40" src={domain.src}alt="Domain and Hosting Illustration">
             </div>
             <div class="flex flex-col items-center justify-center text-amber-50">
                 <h2 class="font-agrandir text-2xl">Hosting + Dominio</h2>
