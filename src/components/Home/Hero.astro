@@ -1,28 +1,34 @@
-<section class="w-full h-screen bg-primary dark:bg-orange-600">
-   
+---
+import primary from "./img/carrousel/bgprimary.png"
+import secondary from "./img/carrousel/secondary.png"
+import tertiary from "./img/carrousel/tertiary.png"
+import quaternary from "./img/carrousel/quaternary.png"
+import quinary from "./img/carrousel/quinary.png"
+---
 
-    <div id="default-carousel" class="relative h-full w-full" data-carousel="slide">
+<section class="w-full h-screen bg-primary">
+    <div id="default-carousel" class="overflow-hidden relative h-full w-full" data-carousel="slide">
         <!-- Carousel wrapper -->
-        <div class="relative h-full w-full overflow-hidden rounded-lg md:w-full md:top-10">
+        <div class="relative h-full w-full overflow-hidden rounded-lg md:top-10">
             <!-- Item 1 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="https://placehold.co/600x400" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <img src={primary.src} class=" absolute block w-100 md:w-150 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Background Primary">
             </div>
             <!-- Item 2 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="https://placehold.co/600x400" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <img src={secondary.src} class="absolute block w-100 md:w-150 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Background Secondary">
             </div>
             <!-- Item 3 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="https://placehold.co/600x400" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <img src={tertiary.src} class="absolute block w-100 md:w-150 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Background Tertiary">
             </div>
             <!-- Item 4 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="https://placehold.co/600x400" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <img src={quaternary.src} class="absolute block w-100 md:w-150 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Background Quaternary">
             </div>
             <!-- Item 5 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="https://placehold.co/600x400" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <img src={quinary.src} class="absolute block w-100 md:w-150 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Background Quinary">
             </div>
         </div>
         <!-- Slider indicators -->
