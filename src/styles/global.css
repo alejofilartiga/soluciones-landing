@@ -2,7 +2,8 @@
 @import "flowbite/src/themes/default";
 @plugin "flowbite/plugin";
 @source "../../node_modules/flowbite";
-
+@import "tailwindcss";
+@import "tailwindcss-animated";
 
 @font-face {
   font-family: 'Agrandir';
