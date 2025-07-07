@@ -1,15 +1,11 @@
+---
+import Layout from "../layouts/Layout.astro"
+---
 
-
-<html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Página no encontrada | 404</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    </head>
-    <body>
-        <h1>404</h1>
-        <h2>Página no encontrada</h2>
-        <p>Lo sentimos, la página que buscas no existe.</p>
-        <a href="/">Volver al inicio</a>
-    </body>
-</html>
+<Layout>
+  <div class="bg-primary flex flex-col items-center justify-center h-dvh w-full ">
+    <h1 class="text-4xl font-bold mb-4 text-amber-100 font-agrandir">404 - Página no encontrada</h1>
+    <p class="text-lg mb-6 text-shadow-neutral-900 font-montserrat">Lo sentimos, la página que buscas no existe.</p>
+    <a href="/" class="text-amber-50 hover:underline px-4 py-2 rounded-lg bg-secondary font-montserrat">Volver a la página principal</a>
+  </div>
+</Layout>
